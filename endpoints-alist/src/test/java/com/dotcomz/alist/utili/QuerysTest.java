@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 public class QuerysTest {
 
@@ -16,6 +17,7 @@ public class QuerysTest {
 	public void tearDown() throws Exception {
 	}
 
+	@Ignore
 	@Test
 	public void test() {
 		fail("Not yet implemented");
