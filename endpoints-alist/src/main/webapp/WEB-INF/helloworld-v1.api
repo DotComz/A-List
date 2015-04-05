@@ -24,13 +24,28 @@
     "maxAge" : 0
   },
   "methods" : {
+    "helloworld.greetings.listGreeting" : {
+      "path" : "hellogreeting",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com" ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com", "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "rosyMethod" : "com.dotcomz.alist.Greetings.listGreeting",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
     "helloworld.greetings.getGreeting" : {
       "path" : "hellogreeting/{id}",
       "httpMethod" : "GET",
       "authLevel" : "NONE",
       "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com" ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com", "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "audiences" : [ "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com" ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com", "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
       "rosyMethod" : "com.dotcomz.alist.Greetings.getGreeting",
       "request" : {
         "parameters" : {
@@ -45,28 +60,13 @@
         "body" : "autoTemplate(backendResponse)"
       }
     },
-    "helloworld.greetings.listGreeting" : {
-      "path" : "hellogreeting",
-      "httpMethod" : "GET",
-      "authLevel" : "NONE",
-      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com" ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com", "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
-      "rosyMethod" : "com.dotcomz.alist.Greetings.listGreeting",
-      "request" : {
-        "body" : "empty"
-      },
-      "response" : {
-        "body" : "autoTemplate(backendResponse)"
-      }
-    },
     "helloworld.greetings.multiply" : {
       "path" : "hellogreeting/{times}",
       "httpMethod" : "post",
       "authLevel" : "NONE",
       "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com" ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com", "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "audiences" : [ "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com" ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com", "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
       "rosyMethod" : "com.dotcomz.alist.Greetings.insertGreeting",
       "request" : {
         "parameters" : {
@@ -87,8 +87,8 @@
       "httpMethod" : "POST",
       "authLevel" : "NONE",
       "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com" ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com", "760301236458-utaopf3hcv1qc9ah9aihb00cc0avcb29.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
+      "audiences" : [ "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com" ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com", "1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com", "replace this with your Android client ID", "replace this with your iOS client ID" ],
       "rosyMethod" : "com.dotcomz.alist.Greetings.authedGreeting",
       "request" : {
         "body" : "empty"
@@ -123,14 +123,14 @@
       }
     },
     "methods" : {
-      "com.dotcomz.alist.Greetings.getGreeting" : {
-        "response" : {
-          "$ref" : "HelloGreeting"
-        }
-      },
       "com.dotcomz.alist.Greetings.listGreeting" : {
         "response" : {
           "$ref" : "HelloGreetingCollection"
+        }
+      },
+      "com.dotcomz.alist.Greetings.getGreeting" : {
+        "response" : {
+          "$ref" : "HelloGreeting"
         }
       },
       "com.dotcomz.alist.Greetings.insertGreeting" : {

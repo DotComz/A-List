@@ -25,15 +25,41 @@
 		}
 	}
 </script>
+
+<link type="text/css" rel="stylesheet"
+	href="/bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet"
+	href="/bootstrap/css/bootstrap-responsive.css">
+<link type="text/css" rel="stylesheet" href="/css/style.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<h2>Landing</h2>
-	<span id="signinButton"> <span class="g-signin"
-		data-callback="signinCallback"
-		data-clientid="1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com"
-		data-cookiepolicy="single_host_origin"
-		data-requestvisibleactions="http://schema.org/AddAction"
-		data-scope="https://www.googleapis.com/auth/plus.login"> </span>
-	</span>
+	<div class="jumbotron">
+		<div class="container">
+
+			<form class="col-xs-12">
+				<button type="button" class="btn btn-primary btn-lg btnList "
+					style="text-align: center">List</button>
+			</form>
+			<form class="col-xs-12">
+				<button type="button" class="btn btn-primary btn-lg btnAdd">Add
+				</button>
+			</form>
+			<form class="col-xs-12">
+				<button type="button" class="btn btn-primary btn-lg btnShop">Shop</button>
+			</form>
+			<div>
+				<span id="signinButton"> <span class="g-signin"
+					data-callback="signinCallback"
+					data-clientid="1083260449954-knkapobd9h0jjvfbd2ept422t1k7lc8g.apps.googleusercontent.com"
+					data-cookiepolicy="single_host_origin"
+					data-requestvisibleactions="http://schema.org/AddAction"
+					data-scope="https://www.googleapis.com/auth/plus.login"> </span>
+				</span>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
